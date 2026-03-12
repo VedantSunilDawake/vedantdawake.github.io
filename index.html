@@ -3,146 +3,296 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Vedant Dawake | Senior SDET Portfolio</title>
+<title>Vedant Dawake | SDET Portfolio</title>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
 <style>
-*{box-sizing:border-box}
-body{margin:0;font-family:'Inter',sans-serif;background:#0f172a;color:#e5e7eb}
+*{box-sizing:border-box;margin:0;padding:0}
 
-header{min-height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:40px;background:linear-gradient(135deg,#0f172a,#1e293b)}
+body{
+font-family:'Inter',sans-serif;
+background:#0f172a;
+color:#e2e8f0;
+line-height:1.6;
+}
 
-header h1{font-size:56px;margin:0}
-header h2{font-weight:400;color:#94a3b8;margin-top:10px}
+nav{
+position:sticky;
+top:0;
+background:#020617;
+padding:14px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+border-bottom:1px solid #1e293b;
+z-index:100;
+}
 
-.buttons{margin-top:30px}
-.buttons a{margin:10px;padding:12px 22px;border-radius:8px;text-decoration:none;font-weight:500}
+nav h3{color:white}
 
-.btn-primary{background:#3b82f6;color:white}
-.btn-outline{border:1px solid #3b82f6;color:#3b82f6}
+nav ul{
+display:flex;
+list-style:none;
+gap:22px;
+}
 
-nav{position:sticky;top:0;background:#020617;padding:12px;text-align:center;border-bottom:1px solid #1e293b}
-nav a{color:#cbd5f5;margin:0 18px;text-decoration:none;font-weight:500}
+nav a{
+color:#cbd5f5;
+text-decoration:none;
+font-size:14px;
+}
 
-section{padding:80px 12%}
+.hero{
+min-height:90vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:40px;
+background:linear-gradient(135deg,#020617,#1e293b);
+}
 
-h3.section-title{font-size:32px;margin-bottom:30px}
+.hero h1{
+font-size:52px;
+margin-bottom:10px;
+}
 
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px}
+.hero h2{
+font-weight:400;
+color:#94a3b8;
+margin-bottom:20px;
+}
 
-.card{background:#020617;padding:24px;border-radius:12px;border:1px solid #1e293b;transition:0.3s}
-.card:hover{transform:translateY(-5px);border-color:#3b82f6}
+.hero p{
+max-width:600px;
+color:#cbd5f5;
+margin-bottom:30px;
+}
 
-.metric{font-size:28px;font-weight:700;color:#3b82f6}
+.buttons{
+display:flex;
+flex-wrap:wrap;
+gap:15px;
+justify-content:center;
+}
 
-.skills-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px}
+.btn{
+padding:12px 22px;
+border-radius:8px;
+font-weight:500;
+text-decoration:none;
+transition:0.3s;
+}
 
-footer{text-align:center;padding:40px;background:#020617;border-top:1px solid #1e293b}
+.btn-primary{
+background:#3b82f6;
+color:white;
+}
 
-.tag{display:inline-block;padding:6px 10px;background:#1e293b;border-radius:6px;margin:4px;font-size:12px}
+.btn-primary:hover{background:#2563eb}
+
+.btn-outline{
+border:1px solid #3b82f6;
+color:#3b82f6;
+}
+
+.btn-outline:hover{
+background:#3b82f6;
+color:white;
+}
+
+section{
+padding:80px 10%;
+}
+
+.section-title{
+font-size:32px;
+margin-bottom:30px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:24px;
+}
+
+.card{
+background:#020617;
+padding:24px;
+border-radius:12px;
+border:1px solid #1e293b;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-6px);
+border-color:#3b82f6;
+}
+
+.metric{
+font-size:30px;
+color:#3b82f6;
+font-weight:700;
+margin-bottom:10px;
+}
+
+.skills-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+}
+
+.tag{
+background:#1e293b;
+padding:6px 10px;
+border-radius:6px;
+font-size:12px;
+display:inline-block;
+margin:4px 4px 0 0;
+}
+
+.timeline{
+border-left:2px solid #3b82f6;
+padding-left:20px;
+}
+
+.timeline-item{
+margin-bottom:30px;
+}
+
+.timeline-item h4{
+margin-bottom:6px;
+}
+
+footer{
+text-align:center;
+padding:30px;
+border-top:1px solid #1e293b;
+background:#020617;
+}
+
+@media(max-width:700px){
+.hero h1{font-size:36px}
+nav ul{display:none}
+}
 </style>
 </head>
+
 <body>
 
-<header>
+<nav>
+<h3>Vedant Dawake</h3>
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#impact">Impact</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#experience">Experience</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+<section class="hero">
 <h1>Vedant Dawake</h1>
-<h2>Software Development Engineer in Test • Automation Architect • CI/CD Optimization Engineer</h2>
-<p>Building scalable automation frameworks and optimizing release pipelines for enterprise SaaS platforms.</p>
+<h2>SDET • Automation Framework Engineer • CI/CD Optimization</h2>
+<p>
+I build scalable automation frameworks and optimize CI/CD pipelines to improve release efficiency and engineering productivity for enterprise SaaS platforms.
+</p>
 
 <div class="buttons">
-<a class="btn-primary" href="mailto:vedantdawake@gmail.com">Contact Me</a>
-<a class="btn-outline" href="https://linkedin.com/in/vedant-dawake-0643891b4">LinkedIn</a>
+<a class="btn btn-primary" href="mailto:vedantdawake@gmail.com">Email Me</a>
+<a class="btn btn-outline" target="_blank" href="https://linkedin.com/in/vedant-dawake-0643891b4">LinkedIn</a>
+<a class="btn btn-outline" target="_blank" href="https://github.com/vedantsunildawake">GitHub</a>
 </div>
-</header>
-
-<nav>
-<a href="#about">About</a>
-<a href="#experience">Experience</a>
-<a href="#projects">Projects</a>
-<a href="#skills">Skills</a>
-<a href="#insights">Insights</a>
-<a href="#contact">Contact</a>
-</nav>
+</section>
 
 <section id="about">
 <h3 class="section-title">About Me</h3>
 <p>
-SDET with 3+ years of experience designing scalable test automation frameworks, improving CI/CD efficiency, and automating deployments for enterprise SaaS systems. Experienced in solving complex automation challenges, reducing flaky tests, and optimizing regression execution.
+Software Development Engineer in Test with 3+ years of experience designing automation frameworks, optimizing CI/CD pipelines and stabilizing large enterprise regression suites. I specialize in improving release confidence through scalable testing architecture and automation strategies.
 </p>
 </section>
 
-<section id="experience">
+<section id="impact">
 <h3 class="section-title">Engineering Impact</h3>
 
 <div class="grid">
 
 <div class="card">
 <div class="metric">85%</div>
-<p>Deployment efficiency improvement through Hangfire deployment automation using PowerShell integrated into CI/CD pipelines.</p>
+<p>Reduced deployment time using PowerShell based automation integrated into CI/CD pipelines.</p>
 </div>
 
 <div class="card">
 <div class="metric">2 hrs/day</div>
-<p>Regression execution time saved by designing impacted test execution strategy inside CI/CD workflows.</p>
+<p>Saved regression execution time through impacted test workflow in CI/CD.</p>
 </div>
 
 <div class="card">
 <div class="metric">Framework</div>
-<p>Built reusable automation framework components supporting GDPR, Bulk Actions, and UI modernization testing.</p>
+<p>Developed reusable C# Selenium automation framework supporting enterprise scale testing.</p>
+</div>
+
+<div class="card">
+<div class="metric">Award</div>
+<p>Received Job Well Done award for GDPR automation framework development.</p>
 </div>
 
 </div>
 </section>
 
 <section id="projects">
-<h3 class="section-title">Key Engineering Projects</h3>
+<h3 class="section-title">Key Projects</h3>
 
 <div class="grid">
 
 <div class="card">
 <h4>Automation Framework Architecture</h4>
-<p>Designed scalable UI automation framework using C#, Selenium, and Page Object Model supporting enterprise regression testing.</p>
-
-<div>
+<p>Designed scalable Selenium based automation framework with reusable components and modular architecture.</p>
 <span class="tag">C#</span>
 <span class="tag">Selenium</span>
-<span class="tag">POM</span>
-</div>
+<span class="tag">Automation</span>
 </div>
 
 <div class="card">
-<h4>CI/CD Pipeline Optimization</h4>
-<p>Implemented impacted test execution logic using GitHub Actions reducing unnecessary regression runs.</p>
-
-<div>
-<span class="tag">GitHub Actions</span>
+<h4>CI/CD Optimization</h4>
+<p>Implemented impacted test selection in GitHub pipelines reducing unnecessary regression execution.</p>
 <span class="tag">CI/CD</span>
-<span class="tag">Pipeline Optimization</span>
-</div>
+<span class="tag">GitHub Actions</span>
+<span class="tag">Pipeline</span>
 </div>
 
 <div class="card">
 <h4>Deployment Automation</h4>
-<p>Developed PowerShell scripts to automate Hangfire deployment reducing manual deployment effort drastically.</p>
-
-<div>
+<p>Automated Hangfire deployment reducing release deployment time from 30 minutes to 4 minutes.</p>
 <span class="tag">PowerShell</span>
-<span class="tag">Automation</span>
 <span class="tag">DevOps</span>
-</div>
 </div>
 
 <div class="card">
-<h4>GDPR Automation Coverage</h4>
-<p>Developed reusable validation utilities ensuring enterprise compliance testing for GDPR data anonymization.</p>
-
-<div>
-<span class="tag">Enterprise Testing</span>
-<span class="tag">Automation</span>
+<h4>GDPR Automation</h4>
+<p>Built automation coverage for GDPR anonymization workflows ensuring compliance testing.</p>
 <span class="tag">Compliance</span>
-</div>
+<span class="tag">Automation</span>
 </div>
 
 </div>
+</section>
+
+<section id="experience">
+<h3 class="section-title">Experience</h3>
+
+<div class="timeline">
+
+<div class="timeline-item">
+<h4>Icertis — Software Engineer (SDET)</h4>
+<p>2022 – Present</p>
+<p>Worked on enterprise automation frameworks, CI/CD pipeline optimization and deployment automation.</p>
+</div>
+
+</div>
+
 </section>
 
 <section id="skills">
@@ -157,7 +307,7 @@ SDET with 3+ years of experience designing scalable test automation frameworks, 
 
 <div class="card">
 <h4>Automation</h4>
-<p>Selenium • UI Automation • End-to-End Testing • Framework Architecture</p>
+<p>Selenium • UI Automation • End to End Testing</p>
 </div>
 
 <div class="card">
@@ -166,31 +316,8 @@ SDET with 3+ years of experience designing scalable test automation frameworks, 
 </div>
 
 <div class="card">
-<h4>Testing Practices</h4>
-<p>Root Cause Analysis • Regression Stability • Release Management</p>
-</div>
-
-<div class="card">
-<h4>Currently Learning</h4>
-<p>Playwright • API Automation • Docker</p>
-</div>
-
-</div>
-</section>
-
-<section id="insights">
-<h3 class="section-title">Engineering Insights</h3>
-
-<div class="grid">
-
-<div class="card">
-<h4>Reducing Flaky Selenium Tests</h4>
-<p>Framework-level strategies for stabilizing UI automation including locator design, waits, and retries.</p>
-</div>
-
-<div class="card">
-<h4>CI/CD Optimization Strategies</h4>
-<p>How impacted test selection dramatically reduces regression time while maintaining confidence.</p>
+<h4>Practices</h4>
+<p>Root Cause Analysis • Regression Optimization • Release Management</p>
 </div>
 
 </div>
@@ -199,16 +326,19 @@ SDET with 3+ years of experience designing scalable test automation frameworks, 
 
 <section id="contact">
 <h3 class="section-title">Contact</h3>
-
 <p>Email: vedantdawake@gmail.com</p>
 <p>Phone: +91 7420084019</p>
-<p>LinkedIn: linkedin.com/in/vedant-dawake-0643891b4</p>
 <p>Location: Pune, India</p>
+
+<div class="buttons" style="margin-top:20px">
+<a class="btn btn-primary" href="mailto:vedantdawake@gmail.com">Send Email</a>
+<a class="btn btn-outline" target="_blank" href="https://linkedin.com/in/vedant-dawake-0643891b4">LinkedIn</a>
+</div>
 
 </section>
 
 <footer>
-<p>© 2026 Vedant Dawake • Built for engineering excellence</p>
+<p>© 2026 Vedant Dawake • SDET Portfolio</p>
 </footer>
 
 </body>
